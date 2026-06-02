@@ -1,4 +1,4 @@
-<%@ Page Title="Gestión de Documentos" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="GestionDocumentos.aspx.cs" Inherits="Consultoría_Legal.GestionDocumentos" %>
+﻿<%@ Page Title="Gestión de Documentos" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="GestionDocumentos.aspx.cs" Inherits="Consultoría_Legal.GestionDocumentos" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <section class="tarjeta gestion-documentos">
