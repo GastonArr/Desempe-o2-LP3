@@ -1,44 +1,21 @@
-﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Consultoría_Legal._Default" %>
+﻿<%@ Page Title="Inicio" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Consultoría_Legal._Default" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-
-    <main>
-        <section class="row" aria-labelledby="aspnetTitle">
-            <h1 id="aspnetTitle">ASP.NET</h1>
-            <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
-            <p><a href="http://www.asp.net" class="btn btn-primary btn-md">Learn more &raquo;</a></p>
-        </section>
-
-        <div class="row">
-            <section class="col-md-4" aria-labelledby="gettingStartedTitle">
-                <h2 id="gettingStartedTitle">Getting started</h2>
-                <p>
-                    ASP.NET Web Forms lets you build dynamic websites using a familiar drag-and-drop, event-driven model.
-                A design surface and hundreds of controls and components let you rapidly build sophisticated, powerful UI-driven sites with data access.
-                </p>
-                <p>
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301948">Learn more &raquo;</a>
-                </p>
-            </section>
-            <section class="col-md-4" aria-labelledby="librariesTitle">
-                <h2 id="librariesTitle">Get more libraries</h2>
-                <p>
-                    NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.
-                </p>
-                <p>
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301949">Learn more &raquo;</a>
-                </p>
-            </section>
-            <section class="col-md-4" aria-labelledby="hostingTitle">
-                <h2 id="hostingTitle">Web Hosting</h2>
-                <p>
-                    You can easily find a web hosting company that offers the right mix of features and price for your applications.
-                </p>
-                <p>
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301950">Learn more &raquo;</a>
-                </p>
-            </section>
+    <section class="tarjeta hero-inicio">
+        <div class="hero-texto">
+            <h2>Bienvenido/a a Asesoría Legal Global</h2>
+            <p>
+                Somos una empresa dedicada a brindar asesoramiento legal integral para clientes que necesitan
+                orientación confiable, ordenada y profesional en la gestión de sus trámites y documentos.
+            </p>
+            <p>
+                Desde este sitio podrá registrarse como usuario y acceder a un espacio simple para subir sus
+                documentos legales de forma temporal, siguiendo los contenidos trabajados en clase.
+            </p>
+            <asp:HyperLink ID="HyperLinkRegistro" runat="server" CssClass="boton" NavigateUrl="~/Registro.aspx" Text="Registrarme" />
         </div>
-    </main>
-
+        <div class="hero-imagen">
+            <asp:Image ID="ImageInicio" runat="server" ImageUrl="~/imagenes/logo 3.png" AlternateText="Imagen institucional de Asesoría Legal Global" />
+        </div>
+    </section>
 </asp:Content>
