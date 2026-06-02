@@ -46,8 +46,7 @@ namespace Consultoría_Legal
 
                 // Se guarda la contraseña en una cookie solamente porque la consigna lo solicita. En un sistema real no se debe guardar una contraseña en una cookie sin protección.
                 HttpCookie cookieClave = new HttpCookie("clave", this.txtClave.Text);
-                // La cookie se configura por 1 minuto para reforzar que el dato es temporal y se agrega a la respuesta según lo visto en clase.
-                cookieClave.Expires = DateTime.Now.AddMinutes(1);
+                // No se configura Expires para que la cookie quede sin tiempo determinado en el código, según lo pedido para la demostración de la clase.
                 this.Response.Cookies.Add(cookieClave);
 
                 // Después del clic se muestra el usuario recuperado desde Session en el TextBox Nombre de usuario.
@@ -58,7 +57,7 @@ namespace Consultoría_Legal
                 this.txtClave.TextMode = TextBoxMode.SingleLine;
                 this.txtClave.Text = cookieClave.Value;
 
-                this.LabelMensaje.Text = "Registro correcto. Usuario mostrado desde Session por 1 minuto y contraseña mostrada desde Cookie. Luego puede ir a Gestión de Documentos desde el menú.";
+                this.LabelMensaje.Text = "Registro correcto. Usuario mostrado desde Session por 1 minuto y contraseña mostrada desde Cookie sin tiempo determinado configurado.";
             }
         }
     }
