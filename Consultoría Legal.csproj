@@ -119,6 +119,12 @@
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
+    <Content Include="Registro.aspx" />
+    <Content Include="GestionDocumentos.aspx" />
+    <Content Include="Content\estilos.css" />
+    <Content Include="imagenes\logo 1.png" />
+    <Content Include="imagenes\logo 2.png" />
+    <Content Include="imagenes\logo 3.png" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\bootstrap.bundle.js" />
@@ -206,6 +212,20 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Registro.aspx.cs">
+      <DependentUpon>Registro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registro.aspx.designer.cs">
+      <DependentUpon>Registro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestionDocumentos.aspx.cs">
+      <DependentUpon>GestionDocumentos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestionDocumentos.aspx.designer.cs">
+      <DependentUpon>GestionDocumentos.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -232,6 +252,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Documentos\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
