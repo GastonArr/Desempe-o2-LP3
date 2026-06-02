@@ -18,10 +18,6 @@ namespace Consultoría_Legal
 
         protected global::System.Web.UI.WebControls.Label LabelMensaje;
 
-        protected global::System.Web.UI.WebControls.Label LabelUsuarioSession;
-
-        protected global::System.Web.UI.WebControls.Label LabelClaveCookie;
-
         protected global::System.Web.UI.WebControls.Label LabelSeleccion;
 
         protected global::System.Web.UI.WebControls.FileUpload FileUploadDocumento;

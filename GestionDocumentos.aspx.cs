@@ -11,7 +11,6 @@ namespace Consultoría_Legal
             if (!this.IsPostBack)
             {
                 MostrarEstadoUsuario();
-                MostrarDatosTemporales();
             }
         }
 
@@ -28,30 +27,6 @@ namespace Consultoría_Legal
                 string usuario = this.Session["usuario"].ToString();
                 this.LabelBienvenida.Text = "Bienvenido/a " + usuario + " a su espacio de gestión de documentos legales.";
                 this.ButtonSubirDocumento.Enabled = true;
-            }
-        }
-
-        private void MostrarDatosTemporales()
-        {
-            // Se muestra el valor guardado en Session para que se vea claramente la gestión de sesiones solicitada en la consigna.
-            if (this.Session["usuario"] != null)
-            {
-                this.LabelUsuarioSession.Text = this.Session["usuario"].ToString();
-            }
-            else
-            {
-                this.LabelUsuarioSession.Text = "No hay usuario guardado en Session.";
-            }
-
-            // Se lee la cookie desde Request.Cookies para demostrar que fue creada y recuperada según la clase de Cookies.
-            // Se muestra la contraseña en pantalla solamente con finalidad académica para evidenciar la implementación; en un sistema real no debe mostrarse ni guardarse así.
-            if (this.Request.Cookies["clave"] != null)
-            {
-                this.LabelClaveCookie.Text = this.Request.Cookies["clave"].Value;
-            }
-            else
-            {
-                this.LabelClaveCookie.Text = "No hay clave guardada en Cookie.";
             }
         }
 

@@ -171,7 +171,6 @@ input[type="submit"].boton:hover {
     color: #142f52;
 }
 
-.datos-temporales,
 .datos-archivo {
     margin-top: 24px;
     padding: 18px;
@@ -180,7 +179,6 @@ input[type="submit"].boton:hover {
     border-radius: 10px;
 }
 
-.datos-temporales h3,
 .datos-archivo h3 {
     margin-top: 0;
     color: #0b1f3a;
