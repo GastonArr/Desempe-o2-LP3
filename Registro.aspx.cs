@@ -57,7 +57,11 @@ namespace Consultoría_Legal
                 this.txtClave.TextMode = TextBoxMode.SingleLine;
                 this.txtClave.Text = cookieClave.Value;
 
-                this.LabelMensaje.Text = "Registro correcto. Usuario mostrado desde Session por 1 minuto y contraseña mostrada desde Cookie sin tiempo determinado configurado.";
+                this.LabelMensaje.Text = "Registro correcto. Redirigiendo a Gestión de Documentos.";
+
+                // Cuando el registro pasa todas las validaciones, se redirige al usuario a la página de Gestión de Documentos para que pueda continuar el flujo.
+                this.Response.Redirect("~/GestionDocumentos.aspx", false);
+                this.Context.ApplicationInstance.CompleteRequest();
             }
         }
     }
