@@ -215,3 +215,54 @@ input[type="submit"].boton:hover {
         display: block;
     }
 }
+
+.espacio-documentos {
+    margin-top: 18px;
+}
+
+.resumen-espacio {
+    background: #eef5ff;
+    border: 1px solid #c7d7ea;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 16px;
+}
+
+.resumen-espacio h3,
+.documentos-usuario h3 {
+    color: #0b1f3a;
+    margin-top: 0;
+}
+
+.ayuda-campo {
+    color: #52606d;
+    display: block;
+    margin-top: 8px;
+}
+
+.documentos-usuario {
+    margin-top: 24px;
+    overflow-x: auto;
+}
+
+.tabla-documentos {
+    border-collapse: collapse;
+    width: 100%;
+    background: #ffffff;
+}
+
+.tabla-documentos th,
+.tabla-documentos td {
+    border: 1px solid #d9e2ec;
+    padding: 10px 12px;
+    text-align: left;
+}
+
+.tabla-documentos th {
+    background: #142f52;
+    color: #ffffff;
+}
+
+.tabla-documentos tr:nth-child(even) td {
+    background: #f7f9fc;
+}
