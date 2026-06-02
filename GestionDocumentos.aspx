@@ -6,6 +6,12 @@
         <asp:Label ID="LabelBienvenida" runat="server" CssClass="mensaje-bienvenida" />
         <asp:Label ID="LabelMensaje" runat="server" CssClass="mensaje-informativo" />
 
+        <div class="datos-temporales">
+            <h3>Datos temporales guardados</h3>
+            <p><strong>Usuario recuperado desde Session:</strong> <asp:Label ID="LabelUsuarioSession" runat="server" Text="-" /></p>
+            <p><strong>Clave recuperada desde Cookie:</strong> <asp:Label ID="LabelClaveCookie" runat="server" Text="-" /></p>
+        </div>
+
         <div class="campo-formulario campo-upload">
             <asp:Label ID="LabelSeleccion" runat="server" AssociatedControlID="FileUploadDocumento" Text="Seleccione un documento legal" />
             <asp:FileUpload ID="FileUploadDocumento" runat="server" />
