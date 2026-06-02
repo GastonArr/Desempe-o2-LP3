@@ -46,7 +46,8 @@ namespace Consultoría_Legal
 
                 // Se guarda la contraseña en una cookie solamente porque la consigna lo solicita. En un sistema real no se debe guardar una contraseña en una cookie sin protección.
                 HttpCookie cookieClave = new HttpCookie("clave", this.txtClave.Text);
-                // No se configura Expires para que la cookie quede sin tiempo determinado en el código, según lo pedido para la demostración de la clase.
+                // Se configura la fecha de expiración de la cookie Contraseña para el 20/06/2326, según lo solicitado.
+                cookieClave.Expires = new DateTime(2326, 6, 20);
                 this.Response.Cookies.Add(cookieClave);
 
                 // Después del clic se muestra el usuario recuperado desde Session en el TextBox Nombre de usuario.
